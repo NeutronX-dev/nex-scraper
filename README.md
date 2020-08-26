@@ -64,6 +64,8 @@ Here you can decide weather you remove duplicates or not, if you want to it to f
 > [How to enable/disable removing Duplicates.](#remove-duplicates)
 
 > [Customise what to Filter.](#custom-filter)
+
+> [forEach proxy.](#foreach-callback)
 ## Remove Duplicates
 ```js
 const proxy = require('nex-scraper');
@@ -103,7 +105,22 @@ proxies.setConfig({
 // -------------------------------------
 
 ```
+## forEach Callback
+```js
+const proxy = require('nex-scraper');
+const proxies = new proxy([
+    'URLs...'
+]);
+proxies.setConfig({
+    foreach: (proxy) => {
+        console.log(`Gotten ${proxy}`);
+    }
+});
+```
+It will run the gotten callback for each proxy it gets.
 ## Versions
+> * [1.0.3](https://www.npmjs.com/package/nex-scraper/v/1.0.3)* - Log:
+>    * Added [forEach Callback](#foreach-callback) Configuration.
 > * [1.0.2](https://www.npmjs.com/package/nex-scraper/v/1.0.2)* - Log:
 >    * Added [version](#versions) Area.
 >    * Added [configuration](#configuration) Method.
