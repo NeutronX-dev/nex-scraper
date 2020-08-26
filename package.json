@@ -1,6 +1,6 @@
 {
   "name": "nex-scraper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easily scrape your proxies from your favorite Websites",
   "main": "index.js",
   "keywords": ["proxies", "http", "https", "socks4", "socks5", "socks", "proxy", "proxy-scrape", "proxy scrape", "scrape", "scraper", "proxy-scraper", "proxy scraper", "proxy list", "proxy-list", "free", "free proxy", "free proxy list"],
